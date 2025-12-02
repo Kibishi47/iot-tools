@@ -9,9 +9,12 @@ import Foundation
 
 /// Concrete implementation for Sphero Mini.
 final class Sphero: Robot {
+    
+    internal var runner: SpheroRunner?
 
-    init(bluetoothName: String) {
-        super.init(type: .sphero, bluetoothName: bluetoothName)
+    override init(bluetoothName: String) {
+        super.init(bluetoothName: bluetoothName)
+        self.runner = SpheroRunner(robot: self)
     }
 
     override func connect() {

@@ -10,8 +10,11 @@ import Foundation
 /// Concrete implementation for Sphero RVR.
 final class Rover: Robot {
 
-    init(bluetoothName: String) {
-        super.init(type: .rover, bluetoothName: bluetoothName)
+    internal var runner: RoverRunner?
+
+    override init(bluetoothName: String) {
+        super.init(bluetoothName: bluetoothName)
+        self.runner = RoverRunner(robot: self)
     }
 
     override func connect() {

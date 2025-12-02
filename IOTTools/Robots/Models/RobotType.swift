@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Synchrosphere
 
 enum RobotType {
     case rover
@@ -17,7 +16,7 @@ enum RobotType {
             case .rover:
                 .anyRVR
             case .sphero:
-                .anyMini
+                .anyBolt
         }
     }
 }

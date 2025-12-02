@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Synchrosphere
 import Pappe
 
 /// The low-level runner responsible for sending Pappe commands
@@ -16,7 +15,7 @@ import Pappe
 /// - No Swift control statements inside Pappe blocks.
 /// - All logic safely bridged inside exec {}.
 ///
-class RobotRunner {
+class RoverRunner {
 
     // MARK: - Properties
 
@@ -42,7 +41,7 @@ class RobotRunner {
         //------------------------------------------------------
         // 1) Configure SyncsControllerConfig (callbacks)
         //------------------------------------------------------
-        var cfg = SyncsControllerConfig(deviceSelector: robot.type.toSynchroSphere())
+        var cfg = SyncsControllerConfig(deviceSelector: .anyRVR)
 
         cfg.stateDidChangeCallback = { [weak self] state in
             guard let self = self else { return }

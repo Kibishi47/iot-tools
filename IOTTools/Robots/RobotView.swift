@@ -3,8 +3,8 @@ import SwiftUI
 struct RobotView: View {
 
     // MARK: - UI State
-    @State private var useRover: Bool = true
-    @State private var bluetoothName: String = "RV-B456"
+    @State private var useRover: Bool = false
+    @State private var bluetoothName: String = "SB-808F"
     @State private var robot: Robot? = nil
 
     @State private var sensorText: String = ""

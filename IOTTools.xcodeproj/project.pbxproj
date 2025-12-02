@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96120FA32EDB019000F329CA /* Synchrosphere in Frameworks */ = {isa = PBXBuildFile; productRef = 96120FA22EDB019000F329CA /* Synchrosphere */; };
+		96AD82F32EDF6212001B2E09 /* Pappe in Frameworks */ = {isa = PBXBuildFile; productRef = 96AD82F22EDF6212001B2E09 /* Pappe */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96120FA32EDB019000F329CA /* Synchrosphere in Frameworks */,
+				96AD82F32EDF6212001B2E09 /* Pappe in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = IOTTools;
 			packageProductDependencies = (
-				96120FA22EDB019000F329CA /* Synchrosphere */,
+				96AD82F22EDF6212001B2E09 /* Pappe */,
 			);
 			productName = IOTTools;
 			productReference = 96120F762EDAFC4600F329CA /* IOTTools.app */;
@@ -101,7 +101,7 @@
 			mainGroup = 96120F6D2EDAFC4600F329CA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				96120FA12EDB019000F329CA /* XCRemoteSwiftPackageReference "Synchrosphere" */,
+				96AD82F12EDF6212001B2E09 /* XCRemoteSwiftPackageReference "Pappe" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 96120F772EDAFC4600F329CA /* Products */;
@@ -384,21 +384,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		96120FA12EDB019000F329CA /* XCRemoteSwiftPackageReference "Synchrosphere" */ = {
+		96AD82F12EDF6212001B2E09 /* XCRemoteSwiftPackageReference "Pappe" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/frameworklabs/Synchrosphere";
+			repositoryURL = "https://github.com/frameworklabs/Pappe";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
+				minimumVersion = 0.3.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		96120FA22EDB019000F329CA /* Synchrosphere */ = {
+		96AD82F22EDF6212001B2E09 /* Pappe */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 96120FA12EDB019000F329CA /* XCRemoteSwiftPackageReference "Synchrosphere" */;
-			productName = Synchrosphere;
+			package = 96AD82F12EDF6212001B2E09 /* XCRemoteSwiftPackageReference "Pappe" */;
+			productName = Pappe;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

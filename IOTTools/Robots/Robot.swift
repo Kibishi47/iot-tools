@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Synchrosphere
 
 /// Abstract base class for all your robots.
 /// You never instantiate it directly.
@@ -20,7 +19,6 @@ class Robot {
     private(set) var isConnected: Bool = false
     private(set) var batteryState: BatteryState = .unknown
     private(set) var lastSample: SensorSample = .empty
-    private(set) var type: RobotType
     var heading: Int = 0
 
     // MARK: - Simple callbacks
@@ -30,15 +28,11 @@ class Robot {
     var onSensorUpdate: ((SensorSample) -> Void)?
     var onBatteryUpdate: ((BatteryState) -> Void)?
 
-    // MARK: - Runner internal
-    internal var runner: RobotRunner?
 
     // MARK: - Init
 
-    init(type: RobotType, bluetoothName: String) {
-        self.type = type
+    init(bluetoothName: String) {
         self.bluetoothName = bluetoothName
-        self.runner = RobotRunner(robot: self)
     }
 
     // MARK: - "Abstract" methods to override
